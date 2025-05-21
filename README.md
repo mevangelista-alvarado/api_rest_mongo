@@ -14,8 +14,6 @@ Ejecutar
 ```
 
 # Deploy in Render
-## Crear PosgreSQL
-Pendiente
 
 ## Deploy in Web
 Pendiente
