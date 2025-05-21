@@ -44,8 +44,10 @@ def crear_post():
         'contenido': datos['contenido']
     }
     resultado = posts_collection.insert_one(nuevo_post)
-    nuevo_post['id'] = str(resultado.inserted_id)
-    return jsonify(nuevo_post), 201
+    post_insertado = posts_collection.find_one({'_id': resultado.inserted_id})
+
+    return jsonify(post_to_json(post_insertado)), 201
+
 
 @app.route('/posts/<post_id>', methods=['PATCH'])
 def actualizar_post(post_id):
@@ -63,6 +65,7 @@ def actualizar_post(post_id):
 @app.route('/posts/<post_id>', methods=['DELETE'])
 def eliminar_post(post_id):
     post = posts_collection.find_one({'_id': ObjectId(post_id)})
+    print(post)
     if not post:
         return jsonify({'error': 'Post no encontrado'}), 404
 
