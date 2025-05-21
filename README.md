@@ -15,7 +15,20 @@ Ejecutar
 
 # Deploy in Render
 ## Deploy in Web
-Pendiente
+<img width="1377" alt="image" src="https://github.com/user-attachments/assets/7f360c19-7bb2-46c9-997f-9ccd7bd3741d" />
+<img width="1364" alt="image" src="https://github.com/user-attachments/assets/176ac4b3-b36b-4dff-b904-2ce429e152c4" />
+<img width="1381" alt="image" src="https://github.com/user-attachments/assets/7de382af-611c-4c0e-abef-e39449a65e87" />
+Agregamos la variable de entorno **MONGO_URI** con la siguente estructra  
+
+```
+mongodb+srv://{{USER}}:{{PASSWORD}}@{{CLUSTERNAME}}.3njsr11.mongodb.net/{{DATABASE}}?retryWrites=true&w=majorityt&appName={{CLUSTER_APPNAME}}
+```  
+
+recomendamos al lector copiar y pegar la uri desde MongoAtlas.  
+<img width="1371" alt="image" src="https://github.com/user-attachments/assets/92c9aef6-7d00-4994-80b7-c5dbdf2bec0c" />  
+
+Por último, damos **Deploy Web Service**.
+
 ## Último paso
 Correr el siguiente [Google Colab](https://colab.research.google.com/drive/1NOx8aqK2snQugfmRWArnHylOPHmB0wMF?usp=sharing)
 
