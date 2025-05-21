@@ -14,9 +14,10 @@ Ejecutar
 ```
 
 # Deploy in Render
-
 ## Deploy in Web
 Pendiente
+## Último paso
+Correr el siguiente [Google Colab](https://colab.research.google.com/drive/1NOx8aqK2snQugfmRWArnHylOPHmB0wMF?usp=sharing)
 
 # Entorno Local (Docker)
 ## Primera Vez
